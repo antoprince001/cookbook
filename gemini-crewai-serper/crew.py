@@ -2,6 +2,7 @@ from crewai import Agent, Crew, Process, Task
 from crewai.project import CrewBase, agent, crew, task
 from crewai_tools import SerperDevTool
 
+
 @CrewBase
 class LatestAiDevelopmentCrew():
     """LatestAiDevelopment crew"""
@@ -31,7 +32,7 @@ class LatestAiDevelopmentCrew():
     def reporting_task(self) -> Task:
         return Task(
             config=self.tasks_config['reporting_task'],
-            output_file='output/report.md' # This is the file that will be contain the final report.
+            output_file='output/report.md'  # This is the file that will be contain the final report.
         )
 
     @crew

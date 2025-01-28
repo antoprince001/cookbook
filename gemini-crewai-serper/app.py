@@ -15,7 +15,7 @@ async def on_chat_start():
 
 @cl.on_message
 async def main(message: cl.Message):
-    latest_ai_development_crew = cl.user_session.get("crewobject") 
+    latest_ai_development_crew = cl.user_session.get("crewobject")
     inputs = {
         'topic': message.content
     }
